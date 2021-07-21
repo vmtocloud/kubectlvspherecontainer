@@ -14,4 +14,6 @@ RUN tdnf install -y unzip && \
     rm -f /vsphere-plugin.zip && \
     tdnf erase -y unzip && \
     tdnf clean all
-CMD /bin/sh
+COPY ./start.sh /start.sh
+RUN chmod +x /start.sh
+ENTRYPOINT ["/bin/bash", "/start.sh"]
