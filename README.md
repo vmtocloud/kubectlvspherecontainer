@@ -1,7 +1,7 @@
 # The kubectl vsphere container 
 Run run kubectl vsphere commands in a container 
 
-# Instructions: 
+## Instructions: 
 1. Clone this repository locally
 2. edit the Dockerfile to point to your Tanzu Server URL or address
 3. make the docker image: docker build -t kubectlvsphere .
